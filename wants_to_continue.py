@@ -14,4 +14,5 @@ while True:
     name = input("what is your name ? ")
     print(greet(name))
     if not wants_to_continue():
+        print("i'm sorry to hear that;good luck")
         break
