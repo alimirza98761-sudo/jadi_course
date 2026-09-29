@@ -1,5 +1,6 @@
-name = input("what is your name?")
-print(f"hi {name}, my name is Eilym :) ")
+name = 'ali'
+def greet(name):
+    return (f"hi {name}, my name is Eilym :) ")
 '''
 اون میفهمه که میخوای ادامه بدی یا نه
 
@@ -10,11 +11,5 @@ def wants_to_continue():
         return True
     else:
         return False
+print(greet(name))
 print(wants_to_continue())
-
-
-
-
-
-
-
