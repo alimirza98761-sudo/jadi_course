@@ -1,4 +1,3 @@
-name = 'ali'
 def greet(name):
     return (f"hi {name}, my name is Eilym :) ")
 '''
@@ -11,5 +10,8 @@ def wants_to_continue():
         return True
     else:
         return False
-print(greet(name))
-print(wants_to_continue())
+while True:
+    name = input("what is your name ? ")
+    print(greet(name))
+    if not wants_to_continue():
+        break
