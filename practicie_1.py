@@ -4,13 +4,27 @@ def begir():
 
 def check_kon(adad):
     if adad == 0:
-        return True
+        return 'true'
     if adad % 2 == 0:
-        return True
+        return 'true'
     else:
+        return 'false'
+
+def con():
+    txt = input("do you want to continu??? :")
+    if txt.upper() in [ 'Y', 'YES', 'ARE']:
+        return True
+    elif txt.upper() in ['NA', 'N', 'NO']:
+        return False
+    else:
+        print("i don't understand,i think you say False")
         return False
 
 print("Hello dear :) ")
 print("welcome, lets play")
-res = begir()
-print(check_kon(res))
+while True:
+    res = begir()
+    print(check_kon(res))
+    if not con():
+        break
+print('good by')
