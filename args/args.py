@@ -1,6 +1,13 @@
-def sum_numbers(*args):
-    print(args)
-    return sum(args)
-    
+def jam_hoomand(*args):
+    total = 0
+    count = 0
+    for x in args:
+        if x > 0:
+            total += x
+            count += 1
+       
+    return count, total
 
-print(sum_numbers(2,4,5,6,7,8,9,))
+print(jam_hoomand(5, -2, 3, -10, 4))
+
+
